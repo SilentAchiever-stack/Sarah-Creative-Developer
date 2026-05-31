@@ -855,8 +855,8 @@ body::before {
     left:6px;
     margin: 16px 16px 0 0;
     z-index: 10;
-    width: 25px;
-    height: 30px;
+    width: 28px;
+    height: 35px;
     background: var(--surface2);
     border: 1px solid var(--border);
     border-radius: 50%;
