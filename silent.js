@@ -47,9 +47,10 @@ btn.onclick = () => {
     menu.classList.toggle("active");
 };
 
-/* window.addEventListener('load',()=>{
-    const myvideo = document.querySelector('front');
-    myvideo.play().catch( error =>{
-        console.log('video not loading properly')
+/* window.addEventListener('load', () => {
+    document.querySelectorAll('.front').forEach(video => {
+        video.play().catch(error => {
+            console.log('Video not playing:', error)
+        })
     })
 }) */
