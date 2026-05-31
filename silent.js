@@ -142,7 +142,7 @@ const projects = {
         challenge: "Getting operator chaining right — when a user hits 5 + 3 × 2, ensuring the order of operations works correctly and that consecutive operations chain cleanly without resetting unexpectedly.",
         tech: ["HTML", "CSS", "JavaScript"],
         liveUrl: "https://calculator-ten-tan-13.vercel.app/",
-        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247783/WhatsApp_Image_2026-05-31_at_4.58.52_PM_vrmzpb.jpg"
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780249594/WhatsApp_Image_2026-05-31_at_6.46.09_PM_ueuy2t.jpg"
     }
 
 };
