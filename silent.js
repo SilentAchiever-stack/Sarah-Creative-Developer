@@ -58,7 +58,7 @@ const projects = {
         challenge: "Integrating a third-party news API and filtering content by topic in real time while keeping the UI clean and fast. I had to handle API rate limits and gracefully manage empty or delayed responses without breaking the layout.",
         tech: ["HTML", "CSS", "JavaScript", "News API"],
         liveUrl: "https://perspective-news-six.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247781/perspective_voiuhw.jpg"
     },
 
     medicare: {
@@ -70,7 +70,7 @@ const projects = {
         challenge: "Managing state across a multi-step form without a framework — keeping the user's selections persistent across steps in vanilla JS, validating each step independently, and rendering the appointment summary dynamically before the final confirmation.",
         tech: ["HTML", "CSS", "JavaScript", "Mock Payment UI"],
         liveUrl: "https://medi-care-hospital-flax.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247848/WhatsApp_Image_2026-05-31_at_4.58.50_PM_1_k64jdl.jpg"
     },
 
     luxlab: {
@@ -82,7 +82,7 @@ const projects = {
         challenge: "Implementing image uploads securely — users needed to be able to upload and view profile photos without exposing storage credentials. I integrated cloud-based image hosting and handled upload validation, file size limits, and URL persistence in the database.",
         tech: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "REST API", "Image Upload"],
         liveUrl: "https://react-luxlab-frontend.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247780/WhatsApp_Image_2026-05-31_at_4.58.50_PM_2_rj3rwe.jpg"
     },
 
     trendverse: {
@@ -94,7 +94,7 @@ const projects = {
         challenge: "Building a fully functional cart system with real-time total updates, quantity controls, and item removal — all in vanilla JS without any state management library. Every interaction had to feel smooth and instant.",
         tech: ["HTML", "CSS", "JavaScript"],
         liveUrl: "https://trend-verse-umber.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247782/WhatsApp_Image_2026-05-31_at_4.58.51_PM_fohzaq.jpg"
     },
 
     africana: {
@@ -106,7 +106,7 @@ const projects = {
         challenge: "This was client work, so requirements changed mid-build. Managing scope, communicating technical constraints clearly to a non-technical client, and still delivering a clean, functional product on time was the real test.",
         tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "JWT Auth", "REST API"],
         liveUrl: "https://african-frontend.vercel.app/africana-swallow.html",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247782/WhatsApp_Image_2026-05-31_at_4.58.51_PM_1_l727sn.jpg"
     },
 
     agrotech: {
@@ -118,7 +118,7 @@ const projects = {
         challenge: "Structuring React components to handle both the product catalogue and cart state without prop-drilling becoming unmanageable. I organised shared state cleanly to keep the app scalable as features were added.",
         tech: ["React", "CSS", "JavaScript"],
         liveUrl: "https://react-agro-tech.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247781/WhatsApp_Image_2026-05-31_at_4.58.51_PM_2_uaa9fk.jpg"
     },
 
     music: {
@@ -130,7 +130,7 @@ const projects = {
         challenge: "Managing API response delays without the UI feeling broken — implementing proper loading skeletons and error states so the app always felt responsive, even when the data took a moment to arrive.",
         tech: ["React", "CSS", "JavaScript", "Music API"],
         liveUrl: "https://react-music-ecru.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247782/WhatsApp_Image_2026-05-31_at_4.58.51_PM_3_sxlone.jpg"
     },
 
     calculator: {
@@ -142,7 +142,7 @@ const projects = {
         challenge: "Getting operator chaining right — when a user hits 5 + 3 × 2, ensuring the order of operations works correctly and that consecutive operations chain cleanly without resetting unexpectedly.",
         tech: ["HTML", "CSS", "JavaScript"],
         liveUrl: "https://calculator-ten-tan-13.vercel.app/",
-        screenshot: ""
+        screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247783/WhatsApp_Image_2026-05-31_at_4.58.52_PM_vrmzpb.jpg"
     }
 
 };
