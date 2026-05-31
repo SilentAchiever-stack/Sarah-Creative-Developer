@@ -1368,3 +1368,230 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ─── HERO ACTIONS (two buttons side by side) ─── */
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.9s ease 0.9s forwards;
+}
+
+.hero-btn--outline {
+    background: transparent;
+    border-color: var(--border2);
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-btn--outline:hover {
+    background: var(--gold-lt);
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.hero-btn--outline i {
+    font-size: 1rem;
+}
+
+/* ─── CONTACT SECTION ─── */
+.contact-section {
+    padding: clamp(80px, 10vw, 140px) var(--pad-x);
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(40px, 6vw, 100px);
+    max-width: 1100px;
+    margin-top: 20px;
+}
+
+.contact-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 36px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.contact-link:hover {
+    border-color: var(--gold);
+    background: var(--gold-lt);
+}
+
+.contact-link.linkedin-placeholder {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.contact-link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gold-lt);
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-link-label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 3px;
+}
+
+.contact-link-value {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--muted);
+}
+
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000;
+    background: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 14px 32px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s;
+}
+
+.cv-download-btn:hover {
+    background: transparent;
+    color: var(--gold);
+}
+
+.cv-download-btn i {
+    font-size: 1.1rem;
+}
+
+/* ─── CONTACT FORM ─── */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.form-group input,
+.form-group textarea {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+}
+
+.form-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000;
+    background: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 16px 32px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.form-submit-btn:hover {
+    background: transparent;
+    color: var(--gold);
+}
+
+.form-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-align: center;
+    min-height: 20px;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
