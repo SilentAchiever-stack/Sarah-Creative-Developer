@@ -728,7 +728,7 @@ body::before {
     font-style: italic;
 }
 
-.card-actions {
+/* .card-actions {
     display: flex;
     gap: 8px;
     width: 100%;
@@ -737,7 +737,7 @@ body::before {
 
 .card-actions a {
     flex: 1;
-}
+} */
 
 .view-details-btn {
     font-family: 'DM Mono', monospace;
@@ -760,13 +760,13 @@ body::before {
     color: #000;
 }
 
-.live-btn {
+/* .live-btn {
     font-size: 0.6rem;
     padding: 9px 0;
     width: 100%;
     display: block;
     text-align: center;
-}
+} */
 .card-github {
     display: flex;
     align-items: center;
@@ -785,6 +785,7 @@ body::before {
     border-color: var(--gold);
     background: var(--gold-lt);
 }
+
 .client-badge {
     position: absolute;
     top: 14px;
