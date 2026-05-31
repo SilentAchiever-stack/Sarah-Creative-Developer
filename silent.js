@@ -192,6 +192,22 @@ function closeModalOutside(e) {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeModal();
 });
+
+function handleContactForm(e) {
+    e.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const email = document.getElementById('contact-email').value;
+    const message = document.getElementById('contact-message').value;
+    const note = document.getElementById('form-note');
+
+    const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    window.location.href = `mailto:olatunjisarahmorenikeji@gmail.com?subject=${subject}&body=${body}`;
+
+    note.textContent = 'Opening your email client...';
+    setTimeout(() => { note.textContent = ''; }, 4000);
+}
 /* window.addEventListener('load', () => {
     document.querySelectorAll('.front').forEach(video => {
         video.play().catch(error => {
