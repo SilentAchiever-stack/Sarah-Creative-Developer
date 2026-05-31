@@ -767,7 +767,24 @@ body::before {
     display: block;
     text-align: center;
 }
+.card-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 14px;
+    border: 1px solid var(--border2);
+    border-radius: 2px;
+    color: var(--muted);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
 
+.card-github:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+    background: var(--gold-lt);
+}
 .client-badge {
     position: absolute;
     top: 14px;
