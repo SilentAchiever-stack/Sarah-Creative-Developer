@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,12 +13,12 @@
     <meta name="author" content="Olatunji Sarah Morenikeji">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph (Facebook, LinkedIn, WhatsApp previews) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Sarah Morenikeji | Full-Stack Developer">
     <meta property="og:description"
         content="Creative Full-Stack Developer based in Lagos, Nigeria, crafting immersive web experiences with precision.">
     <meta property="og:image" content="https://res.cloudinary.com/doqevvxhi/image/upload/v1779646129/WhatsApp_Image_2026-05-23_at_3.12.16_PM_mgv2ra.jpg">
-    <meta property="og:url" content="https://silentachiever.dev">
+    <meta property="og:url" content="https://sarah-creative-developer.vercel.app">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
@@ -44,14 +46,17 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
- <div class="nav-socials">
-        <a href="https://github.com/SilentAchiever-stack/Sarah-Creative-Developer" target="_blank" aria-label="GitHub" class="social-icon">
-            <i class="bx bxl-github"></i>
-        </a>
-        <a href="#" target="_blank" aria-label="LinkedIn" class="social-icon linkedin-placeholder">
-            <i class="bx bxl-linkedin"></i>
-        </a>
-    </div>
+
+        <div class="nav-socials">
+            <a href="https://github.com/SilentAchiever-stack/Sarah-Creative-Developer" target="_blank" aria-label="GitHub" class="social-icon">
+                <i class="bx bxl-github"></i>
+            </a>
+            <!-- Replace YOUR_LINKEDIN_URL below with your actual LinkedIn profile link -->
+            <a href="YOUR_LINKEDIN_URL" target="_blank" aria-label="LinkedIn" class="social-icon linkedin-placeholder">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+        </div>
+
         <div id="menu-icon"><i class="bx bx-menu"></i></div>
     </nav>
 
@@ -71,7 +76,12 @@
                 <span class="word">Developer</span>
             </div>
 
-            <a href="#projects" class="hero-btn">View Work</a>
+            <div class="hero-actions">
+                <a href="#projects" class="hero-btn">View Work</a>
+                <a href="Sarah_Morenikeji_CV.docx" download class="hero-btn hero-btn--outline">
+                    Download CV <i class='bx bx-download'></i>
+                </a>
+            </div>
         </div>
 
         <div class="hero-scroll">Scroll</div>
@@ -90,10 +100,10 @@
                 <div class="section-label">Who I am</div>
                 <h2 class="section-title">About Me</h2>
                 <p class="about-bio">
-           Every great product starts with a vision — and someone who can actually build it.
-           I'm a Full-Stack Developer who crafts end-to-end digital experiences that don't just function, they feel right.
-          From pixel-perfect UIs to scalable backend systems, I bring precision, purpose, and a quiet relentlessness to everything I create.
-          Currently levelling up in Software Engineering, because the best developers are always in motion. Based in Lagos, building for the world.
+                    Every great product starts with a vision — and someone who can actually build it.
+                    I'm a Full-Stack Developer who crafts end-to-end digital experiences that don't just function, they feel right.
+                    From pixel-perfect UIs to scalable backend systems, I bring precision, purpose, and a quiet relentlessness to everything I create.
+                    Currently levelling up in Software Engineering, because the best developers are always in motion. Based in Lagos, building for the world.
                 </p>
                 <div class="about-details">
                     <div class="detail-item">
@@ -131,214 +141,293 @@
             <div class="skill-card"><i class="bx bx-transfer"></i> RESTful API</div>
         </div>
     </section>
-<!-- ─── TESTIMONIALS ─── -->
-<section id="testimonials" class="testimonials-section">
-  <div class="section-label">Kind words</div>
-  <h2 class="section-title">Testimonials</h2>
 
-  <div class="testimonials-grid">
+    <!-- ─── TESTIMONIALS ─── -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-label">Kind words</div>
+        <h2 class="section-title">Testimonials</h2>
 
-    <div class="testimonial-card">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">
-        Sarah built our entire restaurant platform from scratch. menu, ordering system, authentication, that works. 
-        She understood our brand before writing a single line of code. The result was beyond what we imagined, 
-        and our customers keep complimenting how smooth the experience feels.
-      </p>
-      <div class="testimonial-author">
-        <div class="testimonial-avatar">CO</div>
-        <div>
-          <h4>Chidi Okafor</h4>
-          <p>Co-Founder, African-Swallow</p>
-        </div>
-      </div>
-    </div>
+        <div class="testimonials-grid">
 
-    <div class="testimonial-card">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">
-        I came to Sarah with a rough idea and a tight deadline. She delivered a polished, fully functional 
-        web application — responsive, fast, and exactly on-brand. What stood out was her attention to 
-        detail and the fact that she actually cares about the user experience, not just shipping code.
-      </p>
-      <div class="testimonial-author">
-        <div class="testimonial-avatar">TA</div>
-        <div>
-          <h4>Temi Adeyinka</h4>
-         <p>Founder, Greystone Digital</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">
-        As a senior dev, I've reviewed a lot of junior portfolios. Sarah's work genuinely surprised me, from
-        clean architecture, real full-stack depth, and design instincts most engineers never develop. 
-        She's not playing at this. She's the real thing.
-      </p>
-      <div class="testimonial-author">
-        <div class="testimonial-avatar">KF</div>
-        <div>
-          <h4>Kolade Fashola</h4>
-         <p>Lead Developer, Indie Studio Lagos</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-  <!-- ─── PROJECTS ─── -->
-<section id="projects" class="projects-section">
-    <div class="section-label">My work</div>
-    <h2 class="section-title">Personal Projects</h2>
-
-    <div class="projects-grid">
-
-        <div class="store" data-project="news">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466451/mine_see8r3.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>Sarah's Perspective News</h1>
-                    <p>A women's rights awareness platform covering child marriage, FGM, domestic violence, and sexual assault — built to educate and advocate globally.</p>
-                    <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span><span>API</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('news')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/PerspectiveNews.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    Sarah built our entire restaurant platform from scratch — menu, ordering system, authentication — and it works.
+                    She understood our brand before writing a single line of code. The result was beyond what we imagined,
+                    and our customers keep complimenting how smooth the experience feels.
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">CO</div>
+                    <div>
+                        <h4>Chidi Okafor</h4>
+                        <p>Co-Founder, African-Swallow</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="medicare">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466621/Hospital_dgvnfg.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>MediCare Hospital</h1>
-                    <p>A hospital web app with a full multi-step appointment booking system — browse specialists, pick a slot, and complete a simulated checkout.</p>
-                    <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span><span>API</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('medicare')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/MediCareHospital.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    I came to Sarah with a rough idea and a tight deadline. She delivered a polished, fully functional
+                    web application — responsive, fast, and exactly on-brand. What stood out was her attention to
+                    detail and the fact that she actually cares about the user experience, not just shipping code.
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">TA</div>
+                    <div>
+                        <h4>Temi Adeyinka</h4>
+                        <p>Founder, Greystone Digital</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="luxlab">
-            <div class="store-inner">
-                <video autoplay muted loop playsinline class="front">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779645341/luxlab_x786qm.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>LuxLab</h1>
-                    <p>A full-stack luxury barbershop platform — heritage craft meets modern tech, with auth, booking, image uploads, and a MongoDB-backed client system.</p>
-                    <div class="tool-s"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('luxlab')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/react-Luxlab.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    As a senior dev, I've reviewed a lot of junior portfolios. Sarah's work genuinely surprised me —
+                    clean architecture, real full-stack depth, and design instincts most engineers never develop.
+                    She's not playing at this. She's the real thing.
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">KF</div>
+                    <div>
+                        <h4>Kolade Fashola</h4>
+                        <p>Lead Developer, Indie Studio Lagos</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="trendverse">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779467090/Trenverse_briir4.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>Trendverse</h1>
-                    <p>A premium fashion e-commerce frontend with category browsing, a product catalogue, cart management, and a high-end retail UI — built from scratch.</p>
-                    <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('trendverse')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/TrendVerse.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects" class="projects-section">
+        <div class="section-label">My work</div>
+        <h2 class="section-title">Personal Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="store" data-project="news">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466451/mine_see8r3.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>Sarah's Perspective News</h1>
+                        <p>A women's rights awareness platform covering child marriage, FGM, domestic violence, and sexual assault — built to educate and advocate globally.</p>
+                        <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span><span>API</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('news')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/PerspectiveNews.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="africana">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466446/kitchen_genpud.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <div class="client-badge">Client Work</div>
-                    <h1>Africana-Swallow</h1>
-                    <p>A full-stack African cuisine restaurant platform with online ordering, menu browsing, table reservations, and JWT-secured order management.</p>
-                    <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span><span>Node.js</span><span>MongoDB</span><span>Auth</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('africana')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/African-Frontend.git" target="_blank" aria-label="GitHub" class="card-github">
-                            <i class="bx bxl-github"></i>
-                        </a>
+            <div class="store" data-project="medicare">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466621/Hospital_dgvnfg.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>MediCare Hospital</h1>
+                        <p>A hospital web app with a full multi-step appointment booking system — browse specialists, pick a slot, and complete a simulated checkout.</p>
+                        <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span><span>API</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('medicare')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/MediCareHospital.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="agrotech">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466714/foodie_vexfu7.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>AgroTech</h1>
-                    <p>A React agri-commerce platform connecting urban buyers directly with local farmers — browse by category, add to cart, and order fresh organic produce.</p>
-                    <div class="tool-s"><span>React</span><span>CSS</span><span>JS</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('agrotech')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/React-Agro-Tech.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+            <div class="store" data-project="luxlab">
+                <div class="store-inner">
+                    <video autoplay muted loop playsinline class="front">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779645341/luxlab_x786qm.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>LuxLab</h1>
+                        <p>A full-stack luxury barbershop platform — heritage craft meets modern tech, with auth, booking, image uploads, and a MongoDB-backed client system.</p>
+                        <div class="tool-s"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('luxlab')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/react-Luxlab.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="music">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466535/Music_pm8t25.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>Music Catalog</h1>
-                    <p>A React music discovery app with real-time API data — search songs, browse by genre, and enjoy a clean player UI delivering a Spotify-like experience.</p>
-                    <div class="tool-s"><span>React</span><span>CSS</span><span>JS</span><span>API</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('music')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/MusicCatalog.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+            <div class="store" data-project="trendverse">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779467090/Trenverse_briir4.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>Trendverse</h1>
+                        <p>A premium fashion e-commerce frontend with category browsing, a product catalogue, cart management, and a high-end retail UI — built from scratch.</p>
+                        <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('trendverse')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/TrendVerse.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="store" data-project="calculator">
-            <div class="store-inner">
-                <video class="front" autoplay muted loop playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466610/calc_fg3f53.mp4" type="video/mp4">
-                </video>
-                <div class="back">
-                    <h1>Calculator</h1>
-                    <p>A clean vanilla JS calculator handling all arithmetic operations, keyboard input, and edge cases like division by zero — minimal, accessible, precise.</p>
-                    <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                    <div class="card-actions">
-                        <button class="view-details-btn" onclick="openModal('calculator')">View Details</button>
-                        <a href="https://github.com/SilentAchiever-stack/Calculator.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+            <div class="store" data-project="africana">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466446/kitchen_genpud.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <div class="client-badge">Client Work</div>
+                        <h1>Africana-Swallow</h1>
+                        <p>A full-stack African cuisine restaurant platform with online ordering, menu browsing, table reservations, and JWT-secured order management.</p>
+                        <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span><span>Node.js</span><span>MongoDB</span><span>Auth</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('africana')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/African-Frontend.git" target="_blank" aria-label="GitHub" class="card-github">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</section>
+            <div class="store" data-project="agrotech">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466714/foodie_vexfu7.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>AgroTech</h1>
+                        <p>A React agri-commerce platform connecting urban buyers directly with local farmers — browse by category, add to cart, and order fresh organic produce.</p>
+                        <div class="tool-s"><span>React</span><span>CSS</span><span>JS</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('agrotech')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/React-Agro-Tech.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store" data-project="music">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466535/Music_pm8t25.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>Music Catalog</h1>
+                        <p>A React music discovery app with real-time API data — search songs, browse by genre, and enjoy a clean player UI delivering a Spotify-like experience.</p>
+                        <div class="tool-s"><span>React</span><span>CSS</span><span>JS</span><span>API</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('music')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/MusicCatalog.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store" data-project="calculator">
+                <div class="store-inner">
+                    <video class="front" autoplay muted loop playsinline preload="auto">
+                        <source src="https://res.cloudinary.com/doqevvxhi/video/upload/v1779466610/calc_fg3f53.mp4" type="video/mp4">
+                    </video>
+                    <div class="back">
+                        <h1>Calculator</h1>
+                        <p>A clean vanilla JS calculator handling all arithmetic operations, keyboard input, and edge cases like division by zero — minimal, accessible, precise.</p>
+                        <div class="tool-s"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                        <div class="card-actions">
+                            <button class="view-details-btn" onclick="openModal('calculator')">View Details</button>
+                            <a href="https://github.com/SilentAchiever-stack/Calculator.git" target="_blank" class="card-github"><i class="bx bxl-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="contact-section">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Let's Work Together</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-left">
+                <p class="contact-intro">
+                    I'm open to internships, junior developer roles, and freelance projects.
+                    If you have something in mind — let's talk.
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:olatunjisarahmorenikeji@gmail.com" class="contact-link">
+                        <div class="contact-link-icon"><i class="bx bx-envelope"></i></div>
+                        <div>
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">olatunjisarahmorenikeji@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/2349067121091?text=Hello%20i'm%20interested%20in%20your%20Services." target="_blank" class="contact-link">
+                        <div class="contact-link-icon"><i class="bx bxl-whatsapp"></i></div>
+                        <div>
+                            <span class="contact-link-label">WhatsApp</span>
+                            <span class="contact-link-value">+234 906 712 1091</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/SilentAchiever-stack" target="_blank" class="contact-link">
+                        <div class="contact-link-icon"><i class="bx bxl-github"></i></div>
+                        <div>
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">SilentAchiever-stack</span>
+                        </div>
+                    </a>
+
+                    <!-- Replace YOUR_LINKEDIN_URL with your real LinkedIn link -->
+                    <a href="YOUR_LINKEDIN_URL" target="_blank" class="contact-link linkedin-placeholder">
+                        <div class="contact-link-icon"><i class="bx bxl-linkedin"></i></div>
+                        <div>
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-value">Olatunji Sarah Morenikeji</span>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="Sarah_Morenikeji_CV.docx" download class="cv-download-btn">
+                    <i class="bx bx-download"></i> Download My CV
+                </a>
+            </div>
+
+            <div class="contact-right">
+                <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">
+                        Send Message <i class="bx bx-send"></i>
+                    </button>
+                    <p class="form-note" id="form-note"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
 
     <!-- ─── FOOTER ─── -->
-    <footer id="contact">
+    <footer>
         <div class="footer-container">
 
             <div class="footer-brand">
@@ -366,9 +455,9 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="https://wa.me/2349067121091?text=Hello%20i'm%20interested%20in%20your%20Services."
-                                target="_blank">WhatsApp</a></li>
+                        <li><a href="https://wa.me/2349067121091?text=Hello%20i'm%20interested%20in%20your%20Services." target="_blank">WhatsApp</a></li>
                         <li><a href="mailto:olatunjisarahmorenikeji@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/SilentAchiever-stack" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
             </div>
@@ -376,54 +465,55 @@
         </div>
 
         <div class="footer-bottom">
-            <p class="copyright">&copy; 2026 <strong>Silent Achiever</strong> · Olatunji Sarah Morenikeji. All rights
-                reserved.</p>
+            <p class="copyright">&copy; 2026 <strong>Silent Achiever</strong> · Olatunji Sarah Morenikeji. All rights reserved.</p>
         </div>
     </footer>
-<div id="project-modal" class="modal-overlay" onclick="closeModalOutside(event)">
-    <div class="modal-box">
-        <button class="modal-close" onclick="closeModal()"><i class='bx bx-x'></i></button>
 
-        <div class="modal-img-wrap">
-            <div class="modal-img-placeholder" id="modal-img-placeholder">
-                <i class='bx bx-image'></i>
-                <span>Screenshot coming soon</span>
-            </div>
-            <img id="modal-img" class="modal-screenshot" src="" alt="" style="display:none;">
-        </div>
+    <!-- ─── PROJECT MODAL ─── -->
+    <div id="project-modal" class="modal-overlay" onclick="closeModalOutside(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()"><i class='bx bx-x'></i></button>
 
-        <div class="modal-body">
-            <div class="modal-header">
-                <span class="modal-tag" id="modal-tag"></span>
-                <h2 id="modal-title"></h2>
-                <p id="modal-subtitle"></p>
+            <div class="modal-img-wrap">
+                <div class="modal-img-placeholder" id="modal-img-placeholder">
+                    <i class='bx bx-image'></i>
+                    <span>Screenshot coming soon</span>
+                </div>
+                <img id="modal-img" class="modal-screenshot" src="" alt="" style="display:none;">
             </div>
 
-            <div class="modal-details">
-                <div class="modal-detail-block">
-                    <h4><i class='bx bx-bulb'></i> Problem Solved</h4>
-                    <p id="modal-problem"></p>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <span class="modal-tag" id="modal-tag"></span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-subtitle"></p>
                 </div>
-                <div class="modal-detail-block">
-                    <h4><i class='bx bx-code-alt'></i> My Contribution</h4>
-                    <p id="modal-contribution"></p>
+
+                <div class="modal-details">
+                    <div class="modal-detail-block">
+                        <h4><i class='bx bx-bulb'></i> Problem Solved</h4>
+                        <p id="modal-problem"></p>
+                    </div>
+                    <div class="modal-detail-block">
+                        <h4><i class='bx bx-code-alt'></i> My Contribution</h4>
+                        <p id="modal-contribution"></p>
+                    </div>
+                    <div class="modal-detail-block">
+                        <h4><i class='bx bx-wrench'></i> Key Challenge</h4>
+                        <p id="modal-challenge"></p>
+                    </div>
                 </div>
-                <div class="modal-detail-block">
-                    <h4><i class='bx bx-wrench'></i> Key Challenge</h4>
-                    <p id="modal-challenge"></p>
-                </div>
+
+                <div class="modal-tech" id="modal-tech"></div>
+
+                <a id="modal-live-btn" href="#" target="_blank" class="modal-live">
+                    View Live Project <i class='bx bx-link-external'></i>
+                </a>
             </div>
-
-            <div class="modal-tech" id="modal-tech"></div>
-
-            <a id="modal-live-btn" href="#" target="_blank" class="modal-live">
-                View Live Project <i class='bx bx-link-external'></i>
-            </a>
         </div>
     </div>
-</div>
+
     <script src="silent.js"></script>
 </body>
 
 </html>
-
