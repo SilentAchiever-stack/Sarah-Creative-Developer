@@ -694,7 +694,7 @@ body::before {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 7px;
     position: absolute;
     inset: 0;
     border-radius: var(--radius);
@@ -726,7 +726,6 @@ body::before {
     color: var(--muted);
     line-height: 1.55;
     font-style: italic;
-    flex: 1;
 }
 
 .card-actions {
