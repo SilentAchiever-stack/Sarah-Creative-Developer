@@ -380,7 +380,48 @@
                 reserved.</p>
         </div>
     </footer>
+<div id="project-modal" class="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()"><i class='bx bx-x'></i></button>
 
+        <div class="modal-img-wrap">
+            <div class="modal-img-placeholder" id="modal-img-placeholder">
+                <i class='bx bx-image'></i>
+                <span>Screenshot coming soon</span>
+            </div>
+            <img id="modal-img" class="modal-screenshot" src="" alt="" style="display:none;">
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-header">
+                <span class="modal-tag" id="modal-tag"></span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-subtitle"></p>
+            </div>
+
+            <div class="modal-details">
+                <div class="modal-detail-block">
+                    <h4><i class='bx bx-bulb'></i> Problem Solved</h4>
+                    <p id="modal-problem"></p>
+                </div>
+                <div class="modal-detail-block">
+                    <h4><i class='bx bx-code-alt'></i> My Contribution</h4>
+                    <p id="modal-contribution"></p>
+                </div>
+                <div class="modal-detail-block">
+                    <h4><i class='bx bx-wrench'></i> Key Challenge</h4>
+                    <p id="modal-challenge"></p>
+                </div>
+            </div>
+
+            <div class="modal-tech" id="modal-tech"></div>
+
+            <a id="modal-live-btn" href="#" target="_blank" class="modal-live">
+                View Live Project <i class='bx bx-link-external'></i>
+            </a>
+        </div>
+    </div>
+</div>
     <script src="silent.js"></script>
 </body>
 
