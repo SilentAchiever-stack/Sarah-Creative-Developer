@@ -840,6 +840,8 @@ body::before {
     transition: transform 0.35s ease;
     scrollbar-width: thin;
     scrollbar-color: var(--border2) transparent;
+    display: flex;         
+    flex-direction: column;
 }
 
 .modal-overlay.active .modal-box {
@@ -877,6 +879,7 @@ body::before {
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
     background: var(--surface2);
+    flex-shrink: 0;
 }
 
 .modal-img-placeholder {
@@ -906,7 +909,7 @@ body::before {
 .modal-screenshot {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+     object-fit: contain; 
     object-position: top;
     display: block;
 }
