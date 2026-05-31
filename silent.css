@@ -914,6 +914,7 @@ body::before {
      object-fit: cover; 
     object-position: top;
     display: block;
+    max-height: none;
 }
 
 .modal-body {
