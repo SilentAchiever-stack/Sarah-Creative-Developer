@@ -462,7 +462,104 @@ body::before {
     color: var(--muted);
     line-height: 1.5;
 }
+/* ─── TESTIMONIALS ─── */
+.testimonials-section {
+    padding: clamp(80px, 10vw, 140px) var(--pad-x);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+}
 
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 20px;
+    max-width: 1300px;
+}
+
+.testimonial-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 36px 28px 28px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.testimonial-card:hover {
+    border-color: var(--gold);
+    background: var(--surface2);
+}
+
+.testimonial-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    line-height: 0.6;
+    color: var(--gold);
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    pointer-events: none;
+}
+
+.testimonial-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.85;
+    color: var(--muted);
+    padding-top: 28px;
+    flex: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.testimonial-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--gold-lt);
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.testimonial-author h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 3px;
+}
+
+.testimonial-author p {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+@media (max-width: 640px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* ─── SKILLS ─── */
 .skills-section {
     padding: clamp(80px, 10vw, 140px) var(--pad-x);
