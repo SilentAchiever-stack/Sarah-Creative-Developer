@@ -157,6 +157,20 @@ const projects = {
     githubUrl: "https://github.com/SilentAchiever-stack/Interview_Api",
     screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786276502/interview-api-architecture-gold_tmnetg.png",
     note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
+},
+
+    chatApi: {
+    tag: "Personal Project",
+    title: "Real-Time Chat Backend API",
+    subtitle: "A backend-only chat engine handling authentication, real-time messaging over WebSockets, and file sharing — the infrastructure a chat app's screen would be built on top of.",
+    problem: "Building a chat feature requires more than just sending text back and forth — it needs secure authentication, instant delivery to the right recipients, and reliable file sharing, all working together without the page constantly refreshing. This project focused purely on getting that backend engine right, independent of any specific frontend.",
+    contribution: "Designed and built the entire backend from scratch — email OTP-verified registration, JWT-based login via httpOnly cookies, real-time group and private messaging with typing indicators and online/offline presence over WebSockets, and file uploads (images, videos, documents) stored through a cloud file service. Containerized the app with Docker and deployed it independently.",
+    challenge: "Authenticating a persistent WebSocket connection works differently from a normal HTTP request — the token has to be validated once, at the connection handshake, rather than per-request. Getting that working meant tracing a mismatch between how the client sent its token and the exact field name the server-side middleware expected. Deployment also surfaced issues invisible locally: a hardcoded port that worked on localhost broke on the hosting platform's dynamic port assignment, missing CORS configuration silently blocked requests from a separate frontend origin, and a single unhandled null value in a database lookup was enough to crash the server for every connected user — fixed by adding defensive checks throughout the real-time event handlers rather than assuming every database call succeeds.",
+    tech: ["Node.js", "Express", "Socket.io", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Docker", "Render"],
+    liveUrl: "https://chat-app-zjqi.onrender.com",
+    githubUrl: "https://github.com/SilentAchiever-stack/Chat-App",
+    screenshot: "",
+    note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
 }
 
 };
