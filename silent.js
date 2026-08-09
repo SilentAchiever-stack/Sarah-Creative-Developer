@@ -143,7 +143,21 @@ const projects = {
         tech: ["HTML", "CSS", "JavaScript"],
         liveUrl: "https://calculator-ten-tan-13.vercel.app/",
         screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780251455/WhatsApp_Image_2026-05-31_at_7.17.12_PM_vuiogx.jpg"
-    }
+    },
+    
+    interviewApi: {
+    tag: "Personal Project",
+    title: "Interview Prep Question API",
+    subtitle: "A backend-only REST API powering an interview preparation platform, stores and serves a curated bank of interview questions, with role-based access so any user can browse while only admins can manage content.",
+    problem: "Interview prep content is often scattered or unmoderated. This project needed a structured, secure backend where questions could be organized by topic and difficulty, browsable by any user, but only editable by trusted admin accounts — with no risk of unverified or low-quality content being added by the public.",
+    contribution: "Designed and built the entire backend from scratch : authentication with email OTP verification, JWT-based login stored as httpOnly cookies, a full CRUD question bank with topic and difficulty filtering, and a dedicated role-based access control layer so write operations are restricted to admins only. Every route, middleware, and controller was written by me, then containerized and deployed independently.",
+    challenge: "Keeping validation, authentication, and authorization as separate middleware layers instead of bundling role checks into each controller meant more upfront structure, but made every route easy to reason about. Deployment also surfaced issues invisible in local development — a dependency installed locally but never recorded in package.json broke on a fresh deploy, and a not-yet-finished feature file excluded via .gitignore was still being imported elsewhere, crashing the server on startup until both sides of that relationship were fixed together.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Docker", "Render"],
+    liveUrl: "https://interview-api-dd6a.onrender.com",
+    githubUrl: "https://github.com/SilentAchiever-stack/Interview_Api",
+    screenshot: "",
+    note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
+}
 
 };
 
