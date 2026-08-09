@@ -169,7 +169,7 @@ const projects = {
     tech: ["Node.js", "Express", "Socket.io", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Docker", "Render"],
     liveUrl: "https://chat-app-zjqi.onrender.com",
     githubUrl: "https://github.com/SilentAchiever-stack/Chat-App",
-    screenshot: "",
+    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786276946/architecture-diagram-gold_wtvflk.png",
     note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
 }
 
