@@ -155,7 +155,7 @@ const projects = {
     tech: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Docker", "Render"],
     liveUrl: "https://interview-api-dd6a.onrender.com",
     githubUrl: "https://github.com/SilentAchiever-stack/Interview_Api",
-    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1780247781/perspective_voiuhw.jpg",
+    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786276502/interview-api-architecture-gold_tmnetg.png",
     note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
 }
 
