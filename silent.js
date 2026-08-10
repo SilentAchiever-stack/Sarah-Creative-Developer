@@ -171,8 +171,20 @@ const projects = {
     githubUrl: "https://github.com/SilentAchiever-stack/Chat-App",
     screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786276946/architecture-diagram-gold_wtvflk.png",
     note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
+},
+hsmApi: {
+    tag: "Personal Project",
+    title: "Hotel System Management API",
+    subtitle: "A backend-only API modeling a full hotel operations workflow — room booking, payments, guest check-in, and admin management — with role-based access across guests, receptionists, and admins.",
+    problem: "Hotel operations involve several distinct roles working together — guests booking rooms, receptionists confirming payments and checking guests in, and admins managing rooms and resolving issues. This needed a single backend that enforces who can do what, prevents double bookings, and keeps every role's data properly connected without a relational database.",
+    contribution: "Designed and built the entire backend, including guest room search and booking with automatic date-overlap checking, a payment flow tied to booking status, receptionist check-in and guest lookup, and admin tools for managing hotels, rooms, and reported issues. Originally built with Prisma and PostgreSQL, then fully converted to MongoDB and Mongoose — redesigning every relationship between users, rooms, bookings, and payments to work as document references instead of foreign keys.",
+    challenge: "Migrating from a relational database to MongoDB meant losing built-in relational guarantees. Preventing double bookings, for example, could no longer rely on a database constraint — it had to be checked explicitly in code, querying existing bookings for a room and comparing date ranges before confirming a new one. Every query that previously used Prisma's include for related data also had to be rewritten using Mongoose's populate, including cases where related records live in entirely separate collections.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Docker", "Render"],
+    liveUrl: "https://hsm-api.onrender.com",
+    githubUrl: "",
+    screenshot: "",
+    note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
 }
-
 };
 
 function openModal(key) {
