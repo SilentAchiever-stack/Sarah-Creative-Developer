@@ -182,7 +182,7 @@ hsmApi: {
     tech: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Docker", "Render"],
     liveUrl: "https://hsm-api.onrender.com",
     githubUrl: "",
-    screenshot: "",
+    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786363603/hsm-api-architecture-gold_gkeupe.png",
     note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
 }
 };
