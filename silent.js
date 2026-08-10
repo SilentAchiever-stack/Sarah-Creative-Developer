@@ -181,7 +181,7 @@ hsmApi: {
     challenge: "Migrating from a relational database to MongoDB meant losing built-in relational guarantees. Preventing double bookings, for example, could no longer rely on a database constraint — it had to be checked explicitly in code, querying existing bookings for a room and comparing date ranges before confirming a new one. Every query that previously used Prisma's include for related data also had to be rewritten using Mongoose's populate, including cases where related records live in entirely separate collections.",
     tech: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Docker", "Render"],
     liveUrl: "https://hsm-api.onrender.com",
-    githubUrl: "",
+    githubUrl: "https://github.com/SilentAchiever-stack/HSM_API.git",
     screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786363603/hsm-api-architecture-gold_gkeupe.png",
     note: "Backend-only API — no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
 }
