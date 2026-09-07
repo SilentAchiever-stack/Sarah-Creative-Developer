@@ -213,7 +213,7 @@ lagosFoodBot: {
     contribution: "Built the full RAG pipeline from scratch: generating embeddings for each business, running vector similarity search to retrieve the most relevant matches for any question, then feeding that context to an LLM to generate a grounded answer. Built both the Express backend and the chat widget frontend, and deployed both live.",
     challenge: "Getting a genuinely working deployment meant debugging real production issues: CORS configuration, mismatched Start Commands on the host, deprecated model names returning 404s, and a leaked API key caught by GitHub's push protection, each one fixed and verified with real testing before moving on.",
     tech: ["Node.js", "Express", "Gemini API", "Embeddings", "Vector Search", "RAG"],
-    liveUrl: "https://lagos-mainland-food-finder-bot.onrender.com",
+    liveUrl: "https://lagos-foodfinder-frontend.vercel.app/",
     githubUrl: "https://github.com/SilentAchiever-stack/Lagos-Mainland-Food-Finder-Bot",
     screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Lagos+Food+Bot",
     note: "Backend deployed on Render, frontend is a separate static chat widget."
@@ -227,7 +227,7 @@ restaurantAssistant: {
     contribution: "Built a shared AI request loop where the model decides per-message whether to answer directly from retrieved restaurant info or call a tool (book_table, check_reservation_status, escalate_to_human). The booking tool sends a real email notification via Nodemailer, and I added automatic retry logic for transient AI provider errors.",
     challenge: "Deploying to a free-tier host surfaced a real-world limitation: outbound SMTP connections were unreliable on the platform's network. Rather than letting that break bookings, I wrapped the email step in its own error handling so the core booking action always succeeds even if the notification email occasionally fails.",
     tech: ["Node.js", "Express", "Gemini API", "Function/Tool Calling", "Nodemailer", "RAG"],
-    liveUrl: "https://restaurant-assistant-backend-e4ws.onrender.com",
+    liveUrl: "https://restaurant-assistant-frontend-tau.vercel.app/",
     githubUrl: "https://github.com/SilentAchiever-stack/Restaurant-Assistant",
     screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Restaurant+Assistant",
     note: "Backend-only API plus a separate chat widget frontend."
