@@ -123,6 +123,7 @@ body::before {
 .nav-links a:hover::after {
     width: 100%;
 }
+
 .nav-socials {
     display: flex;
     align-items: center;
@@ -153,6 +154,7 @@ body::before {
     opacity: 0.35;
     pointer-events: none;
 }
+
 #menu-icon {
     display: none;
     font-size: 1.6rem;
@@ -462,6 +464,7 @@ body::before {
     color: var(--muted);
     line-height: 1.5;
 }
+
 /* ─── TESTIMONIALS ─── */
 .testimonials-section {
     padding: clamp(80px, 10vw, 140px) var(--pad-x);
@@ -560,6 +563,7 @@ body::before {
         grid-template-columns: 1fr;
     }
 }
+
 /* ─── SKILLS ─── */
 .skills-section {
     padding: clamp(80px, 10vw, 140px) var(--pad-x);
@@ -608,6 +612,59 @@ body::before {
 
 .skill-card:hover i {
     color: var(--gold);
+}
+
+/* ─── PROJECT FILTER ─── */
+.projects-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.filter-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid var(--border2);
+    color: var(--muted);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.filter-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.filter-btn.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #000;
+}
+
+.store.hidden-project {
+    display: none;
+}
+
+.ai-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--gold-lt);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 3px 8px;
+    border-radius: 2px;
+    z-index: 2;
 }
 
 /* ─── PROJECTS ─── */
@@ -760,13 +817,14 @@ body::before {
     color: #000;
 }
 
- .live-btn {
+.live-btn {
     font-size: 0.6rem;
     padding: 9px 0;
     width: 100%;
     display: block;
     text-align: center;
 }
+
 .card-github {
     display: flex;
     align-items: center;
@@ -840,7 +898,7 @@ body::before {
     transition: transform 0.35s ease;
     scrollbar-width: thin;
     scrollbar-color: var(--border2) transparent;
-    display: flex;         
+    display: flex;
     flex-direction: column;
 }
 
@@ -852,7 +910,7 @@ body::before {
     position: sticky;
     top: 3px;
     float: left;
-    left:6px;
+    left: 6px;
     margin: 16px 16px 0 0;
     z-index: 10;
     width: 25px;
@@ -877,7 +935,7 @@ body::before {
 .modal-img-wrap {
     width: 100%;
     /* aspect-ratio: 16/9; */
-     height:500px;
+    height: 500px;
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
     background: var(--surface2);
@@ -911,7 +969,7 @@ body::before {
 .modal-screenshot {
     width: 100%;
     height: 100%;
-     object-fit: cover; 
+    object-fit: cover;
     object-position: top;
     display: block;
     max-height: none;
@@ -1072,6 +1130,7 @@ body::before {
         width: 100%;
     }
 }
+
 .back h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
@@ -1342,9 +1401,10 @@ footer {
 
 /* Small phones */
 @media (max-width: 400px) {
-    .hero{
+    .hero {
         min-height: 60vh;
     }
+
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
@@ -1433,7 +1493,7 @@ footer {
     align-items: center;
     gap: 16px;
     padding: 16px 20px;
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     text-decoration: none;
@@ -1529,7 +1589,7 @@ footer {
 
 .form-group input,
 .form-group textarea {
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 14px 18px;
