@@ -47,6 +47,26 @@ btn.onclick = () => {
     menu.classList.toggle("active");
 };
 
+// ─── PROJECT FILTER ───
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.store');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.dataset.filter;
+
+        projectCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+                card.classList.remove('hidden-project');
+            } else {
+                card.classList.add('hidden-project');
+            }
+        });
+    });
+});
 const projects = {
 
     news: {
@@ -184,6 +204,61 @@ hsmApi: {
     githubUrl: "https://github.com/SilentAchiever-stack/HSM_API.git",
     screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1786363603/hsm-api-architecture-gold_gkeupe.png",
     note: "Backend-only API, no visual interface. Live URL returns raw JSON. See Postman demo video for a full walkthrough."
+},
+lagosFoodBot: {
+    tag: "AI Automation - Fullstack",
+    title: "Lagos Mainland Food Finder Bot",
+    subtitle: "A RAG-powered chatbot answering real questions about food businesses across Lagos Mainland (Ikeja, Surulere, Yaba), grounded in actual retrieved data rather than guessing.",
+    problem: "A fixed FAQ list can't handle every way a customer might phrase a question. This project needed to match customer questions to the right business information by meaning, not exact wording, and honestly say when it doesn't know something.",
+    contribution: "Built the full RAG pipeline from scratch: generating embeddings for each business, running vector similarity search to retrieve the most relevant matches for any question, then feeding that context to an LLM to generate a grounded answer. Built both the Express backend and the chat widget frontend, and deployed both live.",
+    challenge: "Getting a genuinely working deployment meant debugging real production issues: CORS configuration, mismatched Start Commands on the host, deprecated model names returning 404s, and a leaked API key caught by GitHub's push protection, each one fixed and verified with real testing before moving on.",
+    tech: ["Node.js", "Express", "Gemini API", "Embeddings", "Vector Search", "RAG"],
+    liveUrl: "https://lagos-mainland-food-finder-bot.onrender.com",
+    githubUrl: "https://github.com/SilentAchiever-stack/Lagos-Mainland-Food-Finder-Bot",
+    screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Lagos+Food+Bot",
+    note: "Backend deployed on Render, frontend is a separate static chat widget."
+},
+
+restaurantAssistant: {
+    tag: "AI Automation - Fullstack",
+    title: "Restaurant Assistant",
+    subtitle: "An AI assistant that goes beyond answering questions: it can actually book a table, check a reservation, and escalate to a human, combining RAG with real tool calling.",
+    problem: "A chatbot that can only talk isn't enough for a real booking flow. This needed a system that knows when to just answer from its knowledge versus when to take a real action, and to notify the business when a booking happens.",
+    contribution: "Built a shared AI request loop where the model decides per-message whether to answer directly from retrieved restaurant info or call a tool (book_table, check_reservation_status, escalate_to_human). The booking tool sends a real email notification via Nodemailer, and I added automatic retry logic for transient AI provider errors.",
+    challenge: "Deploying to a free-tier host surfaced a real-world limitation: outbound SMTP connections were unreliable on the platform's network. Rather than letting that break bookings, I wrapped the email step in its own error handling so the core booking action always succeeds even if the notification email occasionally fails.",
+    tech: ["Node.js", "Express", "Gemini API", "Function/Tool Calling", "Nodemailer", "RAG"],
+    liveUrl: "https://restaurant-assistant-backend-e4ws.onrender.com",
+    githubUrl: "https://github.com/SilentAchiever-stack/Restaurant-Assistant",
+    screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Restaurant+Assistant",
+    note: "Backend-only API plus a separate chat widget frontend."
+},
+
+emailAutomation: {
+    tag: "AI Automation - API",
+    title: "Email/Inbox Automation API",
+    subtitle: "A backend service that reads a real inbox, classifies each email's intent with AI, auto-replies when confident, and escalates anything uncertain to a human, rather than guessing.",
+    problem: "Businesses can't have someone manually triaging every incoming email. But letting an AI reply to everything unsupervised is risky, a wrong auto-reply to a complaint or urgent issue could make things worse. This needed a system that knows its own limits.",
+    contribution: "Built an IMAP-based inbox reader using mailparser for reliable email parsing (proper MIME/base64 decoding, not naive string splitting), an AI classification step scoring each email's category and confidence, and a decision layer that only auto-replies on high-confidence simple questions, escalating everything else with full context to a human review inbox.",
+    challenge: "Real-world emails are messier than test data: encoded system alerts, verification codes, and HTML-only messages all needed to be handled without crashing the batch. I added per-email error isolation so one malformed email never takes down the whole run, and defensive checks around the AI response itself for when the provider returns an error instead of a result.",
+    tech: ["Node.js", "Express", "IMAP", "mailparser", "Gemini API", "Nodemailer"],
+    liveUrl: "https://emailbot-8yjj.onrender.com",
+    githubUrl: "https://github.com/SilentAchiever-stack/Email-Automation",
+    screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Email+Automation",
+    note: "Backend-only API, no visual interface. Trigger via POST /api/check-inbox."
+},
+
+researchAgent: {
+    tag: "AI Automation - API",
+    title: "Research Agent API",
+    subtitle: "A multi-step AI agent that takes a topic, plans specific search queries, searches the live web, synthesizes a cited report, and saves it, all through one API call.",
+    problem: "A single AI response to a research question is often shallow, it answers from training knowledge rather than checking current, real sources. This needed a genuine multi-step process: plan what to search for, actually search, then write a report grounded in what was found.",
+    contribution: "Built the full agent pipeline: a planning step that breaks a topic into distinct search queries for better coverage, real web search integration via Tavily, and a synthesis step that generates an organized, cited report using only the retrieved sources. Exposed the whole pipeline as a real API endpoint, with a CLI mode for quick manual testing.",
+    challenge: "AI provider outages and rate limits are a real operational concern, not just a testing inconvenience. I added defensive error handling that distinguishes a temporary server overage from a hard quota limit, only retrying automatically on the former, so the system fails clearly and quickly rather than hanging or crashing.",
+    tech: ["Node.js", "Express", "Gemini API", "Tavily Search API", "Multi-step Agents"],
+    liveUrl: "https://researchagent-2y8u.onrender.com",
+    githubUrl: "https://github.com/SilentAchiever-stack/Research-Agent",
+    screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Research+Agent",
+    note: "Backend-only API, no visual interface. Trigger via POST /api/research."
 }
 };
 
