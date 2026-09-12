@@ -1226,14 +1226,14 @@ footer {
     font-style: italic;
 }
 
-.footer-brand .powered-by {
+/* .footer-brand .powered-by {
     font-family: 'DM Mono', monospace;
     font-size: 0.68rem;
     letter-spacing: 0.1em;
     color: var(--muted);
     margin-top: 10px;
     font-style: normal;
-}
+} */
 
 .footer-brand .powered-by strong {
     color: var(--gold);
