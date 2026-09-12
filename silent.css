@@ -1220,12 +1220,13 @@ footer {
 
  .footer-brands .powered-by {
     font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
+    font-size: 0.70rem;
     letter-spacing: 0.1em;
-   /*  color: var(--muted); */
+ /*  color: var(--muted); */
     margin-top: 10px;
      margin-bottom:10px;
     font-style: normal;
+    text-align: center;
 }
 
 .footer-brands .powered-by strong {
