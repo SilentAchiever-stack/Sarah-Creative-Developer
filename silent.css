@@ -1218,6 +1218,17 @@ footer {
     font-style: italic;
 }
 
+.footer-brand .powered-by {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+.footer-brand .powered-by strong {
+    color: var(--gold);
+}
 .footer-links-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
