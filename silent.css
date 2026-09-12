@@ -1203,10 +1203,10 @@ footer {
 }
 
 .footer-brand {
-    background-color: #0d0d0d;
+   /*  background-color: #0d0d0d; */
     padding: 24px 20px;
     text-align: center;
-/*     border-bottom: 1px solid #2a2a2a; */
+   border-bottom: 1px solid #2a2a2a; 
 }
 
 
