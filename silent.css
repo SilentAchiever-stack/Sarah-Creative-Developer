@@ -1220,7 +1220,7 @@ footer {
 
  .footer-brands .powered-by {
     font-family: 'DM Mono', monospace;
-    font-size: 0.70rem;
+    font-size: 0.80rem;
     letter-spacing: 0.1em;
  /*  color: var(--muted); */
     margin-top: 10px;
@@ -1231,6 +1231,7 @@ footer {
 
 .footer-brands .powered-by strong {
     color: var(--gold);
+    font-size: 0.70rem;
 }
 .footer-links-wrapper {
     display: grid;
