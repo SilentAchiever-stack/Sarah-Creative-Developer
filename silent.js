@@ -229,11 +229,11 @@ restaurantAssistant: {
     tech: ["Node.js", "Express", "Gemini API", "Function/Tool Calling", "Nodemailer", "RAG"],
     liveUrl: "https://restaurant-assistant-frontend-tau.vercel.app/",
     githubUrl: "https://github.com/SilentAchiever-stack/Restaurant-Assistant",
-    screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Restaurant+Assistant",
+    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1791317481/restuarant_assist_qfhund.png",
     note: "Backend-only API plus a separate chat widget frontend."
 },
 
-emailAutomation: {
+/* emailAutomation: {
     tag: "AI Automation - API",
     title: "Email/Inbox Automation API",
     subtitle: "A backend service that reads a real inbox, classifies each email's intent with AI, auto-replies when confident, and escalates anything uncertain to a human, rather than guessing.",
@@ -259,7 +259,7 @@ researchAgent: {
     githubUrl: "https://github.com/SilentAchiever-stack/Research-Agent",
     screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Research+Agent",
     note: "Backend-only API, no visual interface. Trigger via POST /api/research."
-}
+} */
 };
 
 function openModal(key) {
