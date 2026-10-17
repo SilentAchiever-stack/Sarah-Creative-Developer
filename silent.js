@@ -233,6 +233,39 @@ restaurantAssistant: {
     note: "Backend-only API plus a separate chat widget frontend."
 },
 
+bellaKitchenAI: {
+    tag: "AI Automation Project",
+    title: "Bella Kitchen AI Receptionist",
+    subtitle: "An AI-powered voice receptionist built with Retell AI and Make.com that answers restaurant enquiries, collects reservation requests and customer callback details, and automatically logs requests in Google Sheets while notifying the restaurant team through Gmail.",
+    problem: "Restaurants can spend valuable staff time answering repetitive customer questions and manually recording enquiries. Without an organised follow-up process, customer requests can be overlooked or delayed.",
+
+    contribution: "Built an AI voice agent using Retell AI and connected it to a Make.com automation workflow through a custom webhook. Integrated Google Sheets to automatically store customer names, phone numbers, and reasons for contacting the restaurant, and Gmail to send email notifications containing customer requests for follow-up.",
+
+    challenge: "Connecting the AI voice agent to external services and ensuring customer details were passed correctly through the webhook into Google Sheets and Gmail. I tested the workflow to verify that customer requests were recorded and email notifications were sent successfully.",
+
+    tech: ["Retell AI", "Make.com", "Google Sheets", "Gmail", "Webhooks"],
+
+    liveUrl: "https://res.cloudinary.com/doqevvxhi/video/upload/v1792269568/Untitled_design_6_nox7gr.mp4",
+
+    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1792269837/Integration_Webhooks___Make_-_Google_Chrome_10_17_2026_9_39_19_PM_mek3fy.png"
+},
+    prospectAI: {
+    tag: "AI Automation Project",
+    title: "AI Prospect Research Automation",
+    subtitle: "An AI-powered prospecting workflow built with Firecrawl, Gemini and Make.com that analyses my portfolio, identifies the services I offer, researches businesses that could benefit from them, and automatically organises the results into Google Sheets.",
+    problem: "Finding relevant clients manually is slow and inconsistent. Researching businesses, spotting website or workflow problems, and matching them to the right service takes hours, and the findings are rarely recorded in a structured, reusable format.",
+
+    contribution: "Built a multi-step Make.com scenario that uses Firecrawl to crawl my portfolio website, with a Sleep module to let the crawl finish before Get Crawl Status retrieves the results. An Iterator passes the Markdown content to a first Gemini module that identifies my skills and services. A second Gemini module uses that analysis to find businesses with website, customer-service or workflow opportunities, returning the results as structured JSON. Parse JSON and a second Iterator split each business into its own record, which is added to Google Sheets with separate columns for name, industry, location, website, observed problem, recommended service, contact details and confidence level.",
+
+    challenge: "Making sure the right data reached each module. Get Crawl Status ran before the crawl had completed, Google Sheets showed a green tick while writing empty values, and Gemini returned one large block of text instead of separate fields. I fixed these by adding a Sleep module, inspecting the output of each module to find where the data disappeared, and prompting Gemini for strict JSON with a defined Parse JSON data structure.",
+
+    tech: ["Make.com", "Firecrawl", "Gemini", "Google Sheets", "JSON", "Iterators"],
+
+    liveUrl: "https://res.cloudinary.com/doqevvxhi/image/upload/v1792270202/Integration_Firecrawl___Make_-_Google_Chrome_10_12_2026_3_41_15_PM_ajdzaq.png",
+
+    screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1792270202/Integration_Firecrawl___Make_-_Google_Chrome_10_12_2026_3_41_15_PM_ajdzaq.png"
+}
+    };
 /* emailAutomation: {
     tag: "AI Automation - API",
     title: "Email/Inbox Automation API",
@@ -260,7 +293,7 @@ researchAgent: {
     screenshot: "https://placehold.co/1200x700/0d1f1d/2fbfa8?text=Research+Agent",
     note: "Backend-only API, no visual interface. Trigger via POST /api/research."
 } */
-};
+
 
 function openModal(key) {
     const p = projects[key];
