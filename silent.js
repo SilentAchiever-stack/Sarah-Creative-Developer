@@ -236,17 +236,12 @@ restaurantAssistant: {
 bellaKitchenAI: {
     tag: "AI Automation Project",
     title: "Bella Kitchen AI Receptionist",
-    subtitle: "An AI-powered voice receptionist built with Retell AI and Make.com that answers restaurant enquiries, collects reservation requests and customer callback details, and automatically logs requests in Google Sheets while notifying the restaurant team through Gmail.",
-    problem: "Restaurants can spend valuable staff time answering repetitive customer questions and manually recording enquiries. Without an organised follow-up process, customer requests can be overlooked or delayed.",
-
-    contribution: "Built an AI voice agent using Retell AI and connected it to a Make.com automation workflow through a custom webhook. Integrated Google Sheets to automatically store customer names, phone numbers, and reasons for contacting the restaurant, and Gmail to send email notifications containing customer requests for follow-up.",
-
-    challenge: "Connecting the AI voice agent to external services and ensuring customer details were passed correctly through the webhook into Google Sheets and Gmail. I tested the workflow to verify that customer requests were recorded and email notifications were sent successfully.",
-
+    subtitle: "An AI voice receptionist built with Retell AI and Make.com that takes restaurant enquiries and reservation requests, logs them in Google Sheets, and emails the team through Gmail.",
+    problem: "Restaurants lose staff time answering repetitive questions and manually recording enquiries. Without an organised follow-up process, customer requests can be overlooked or delayed.",
+    contribution: "Built an AI voice agent with Retell AI and connected it to a Make.com workflow through a custom webhook. The workflow stores each caller's name, phone number and reason for calling in Google Sheets, and sends a Gmail notification to the team for follow-up.",
+    challenge: "Making sure customer details passed correctly through the webhook into Google Sheets and Gmail. I tested the workflow to confirm requests were recorded and email notifications were sent.",
     tech: ["Retell AI", "Make.com", "Google Sheets", "Gmail", "Webhooks"],
-
     liveUrl: "https://res.cloudinary.com/doqevvxhi/video/upload/v1792269568/Untitled_design_6_nox7gr.mp4",
-
     screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1792269837/Integration_Webhooks___Make_-_Google_Chrome_10_17_2026_9_39_19_PM_mek3fy.png"
 },
     prospectAI: {
