@@ -152,7 +152,6 @@ body::before {
 
 .linkedin-placeholder {
     opacity: 0.35;
-    pointer-events: none;
 }
 
 #menu-icon {
@@ -1522,7 +1521,6 @@ footer {
 
 .contact-link.linkedin-placeholder {
     opacity: 0.4;
-    pointer-events: none;
 }
 
 .contact-link-icon {
