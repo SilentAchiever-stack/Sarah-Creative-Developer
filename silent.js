@@ -256,7 +256,7 @@ bellaKitchenAI: {
 
     tech: ["Make.com", "Firecrawl", "Gemini", "Google Sheets", "JSON", "Iterators"],
 
-    liveUrl: "https://res.cloudinary.com/doqevvxhi/image/upload/v1792270202/Integration_Firecrawl___Make_-_Google_Chrome_10_12_2026_3_41_15_PM_ajdzaq.png",
+    liveUrl: "https://res.cloudinary.com/doqevvxhi/video/upload/v1792274660/prospect_Ai_zrk5gg.mp4",
 
     screenshot: "https://res.cloudinary.com/doqevvxhi/image/upload/v1792270202/Integration_Firecrawl___Make_-_Google_Chrome_10_12_2026_3_41_15_PM_ajdzaq.png"
 }
